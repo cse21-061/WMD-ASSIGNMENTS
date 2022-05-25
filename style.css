@@ -1,0 +1,155 @@
+/* set global settings */
+body *{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:navy;
+    box-sizing: border-box;
+}
+
+/* set borders for the master page divs */
+div.master:not(#divmaincontainer):not(#divcontainer){
+    border: 1px solid turquoise;
+    margin-bottom: 2px;
+}
+
+/*set width for main container*/
+#divmaincontainer{
+    width:100%;
+    margin:auto;
+    height:300px;
+}
+
+/*style div for the banner */
+#divbanner{
+    width:100%;
+    height:200px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/banner.jpg);
+}
+
+/* style site header and motto */
+#divbanner>#sitetitle{
+    color: brown;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    display:block;
+    padding: 10px;
+}
+#divbanner>#sitemotto{
+    color: red;
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    display:block;
+    padding: 10px;
+}
+
+/* style menu bar */
+#divmenu{
+    height:30px;
+}
+#divmenu>#navmenu>#ulmenu{
+    margin: 5px;
+}
+#divmenu>#navmenu>#ulmenu>li{
+    list-style-type: none;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    color:blue;
+   
+}
+
+/* style div main content */
+#divmaincontent{
+    display:flex;
+    flex-direction: row;
+    gap:0.5%;
+    color:black;
+}
+
+/* style div sidebar */
+#divsidebar{
+    width: 29.5%;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: calibri;
+    color:black;
+    background-image: url(images/banner.jpg);
+}
+
+/* style div content */
+#divcontent{
+    width: 100%;
+    height:300px;
+}
+
+/* style footer */
+#divfooter{
+    height:30px;
+}
+#divfooter>p{
+    margin: 5px;
+    text-align: center;
+}
+
+/* style master class */
+.master{
+    border-radius: 5px;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ video {
+ width: 50%;
+ height: 200px;
+ position: absolute;
+ object-fit: fill;
+ transition: all 150ms linear;
+ z-index: 10;
+}
+
+.box1 {
+opacity: 1;
+}
+.box2 {
+opacity: 0;
+}
+
+/*designing background picture*/
+#divactionbanner{
+    background-image: url(images/banner8.jpg);
+    background-size: 100%;
+    width: 300px;
+    height: 300px;
+    color: black;
+    
+}
+
+#divromancebanner{
+    background-image: url(images/banner7.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+    color: black;
+    
+        
+}
+#divanimebanner{
+    background-image: url(images/banner6.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+    color: black;
+    
+        
+}
+#divhorrorbanner{
+    background-image: url(images/banner4.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+    color: black;       
+}

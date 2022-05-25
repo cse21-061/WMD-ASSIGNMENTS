@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Big View Movies</title>
+        <meta charset="utf-8">
+        <link href="C:\Users\cse21-061\OneDrive - Botswana Accountancy College\Documents\wmd assignment\style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="divmaincontainer" class="master">
+            <div id="divbanner" class="master">
+                <span id="sitetitle">Big View Movies</span>
+                <span id="sitemotto">Catch the best and new movie releases at Big View Cinemas</span>
+            </div>
+            <div id="divmenu" class="master">
+                <nav id="navmenu">
+                    <ul id="ulmenu">
+                        <li><a href="Anime.html" target="self"></a></li>
+                        <li><a href="Romance.html" target="self"></a></li>
+                        <li><a href="Action.html" target="self"></a></li>
+                        <li><a href="Horror.html" target="self"></a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Buy movie</a></li>
+                        <li><a href="#">Sign in/ create account</a></li>
+                        <label for="#Movie-category">Movie Category:</label>
+                    <select movie="#Movie-category" id="Movie-category">
+                        <option
+                        value="horror">Horror</option>
+                        <option
+                        value="romance">Romance</option>
+                        <option
+                        value="action">Action</option>
+                        <option
+                        value="anime">Anime</option>
+                    </select>
+                    </ul>
+                </nav>
+            </div>
+            <div id="divmaincontent" class="master">
+                 <div id="divsidebar" class="master">
+                    <div id="divsearch" class="sidebar">
+                        <label for="txtsearch">Search :</label>
+                        <input type="search">
+                    </div>
+                    <div id="divaboutus" class="sidebar">
+                        <p>Delivering the best movies sice 2009</p>
+                        <p>bigviewmovies@gmail.com</p>
+                        <p>376 983</p>
+                    </div>
+                </div>
+                <div id="divcontent" class="master">
+                    <span id="sitetitle">UPCOMING MOVIES</span>
+                    <video autoplay=""class="box1"id="box1"src="C:\Users\cse21-061\OneDrive - Botswana Accountancy College\Documents\wmd assignment\1.mp4.mp4"></video>
+                    <video autoplay=""class="box2"id="box2"src="C:\Users\cse21-061\OneDrive - Botswana Accountancy College\Documents\wmd assignment\2.mp4.mp4"></video>
+                 </div>
+                 <script>
+                      var box1 = document.getElementById('box1');
+                      var box2 = document.getElementById('box2');
+    
+                      box1.onended = function () 
+                      {
+                      box2.play();
+                      box1.style.opacity=0;
+                      box2.style.opacity=1;
+                      }
+                      box2.onended = function () 
+                      {
+                      box1.play();
+                      box2.style.opacity=0;
+                      box1.style.opacity=1;
+                      }
+                 </script>
+            </div>
+        </div>
+    </body>
+</html>
